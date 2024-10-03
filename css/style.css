@@ -1,0 +1,789 @@
+@font-face {
+  font-family: "Tusker Grotesk";
+  src: url(../font/TuskerGrotesk-2700Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1340px;
+}
+
+.Section_hov {
+  position: sticky;
+  top: 0;
+  object-fit: contain;
+}
+
+/* ----------------NAVBAR-PART-START------------------- */
+.navbar {
+  position: fixed;
+  margin-top: 33px;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 9999;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-link {
+  color: #fcfcfc;
+  font-family: Montserrat;
+  font-size: 13.27px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #c84300;
+  transform: scale(1.2);
+}
+
+/* ----------------NAVBAR-PART-END--------------------- */
+
+/* ----------------VideoBanner-PART-START------------------- */
+#video-banner {
+  padding: 768px 0 74px;
+}
+#video-banner video {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-banner video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#video-banner .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#video-banner .logo img {
+  margin-bottom: 10px;
+}
+
+#video-banner .logo h2 {
+  color: #e8e7e6;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* ----------------VideoBanner-PART-END--------------------- */
+
+/* ----------------Projects-PART-START------------------- */
+#projects {
+  background: #000000;
+  z-index: 999;
+}
+#projects .container .row .heading_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#projects .container .row .heading_part h2 {
+  color: #e8e7e6;
+  font-family: "Tusker Grotesk";
+  font-size: 260px;
+  font-weight: 400;
+  width: 405px;
+  margin-top: 116px;
+}
+#projects .container .row .heading_part a {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 13.27px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+#projects .container .row p {
+  color: #e8e7e6;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 166.667% */
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+#projects .container .row .projects_part {
+  height: 508px;
+  overflow-x: hidden;
+  max-width: 1340px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  display: flow-root;
+  
+  
+  
+  
+}
+#projects .container .row .projects_part::-webkit-scrollbar {
+  display: none;
+}
+#projects .container .row .projects_part img {
+  border-radius: 15px;
+  margin-top: 30px;
+  width: 100%;
+}
+#projects .container .row img {
+  border-radius: 15px;
+}
+/* ----------------Projects-PART-END--------------------- */
+
+/* ----------------projects_part_images-PART-Start--------------------- */
+#projects_part_images {
+  background: #000000;
+  position: relative;
+}
+#projects_part_images .container .projects_part{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+}
+#projects_part_images .container .projects_part img{
+  border-radius: 20px;
+}
+
+
+
+
+/* ----------------projects_part_images-PART-END--------------------- */
+
+/* ----------------Portfolio-PART-START------------------- */
+#portfolio_part {
+  background: #141414;
+  padding: 350px;
+  z-index: 999;
+  overflow-y: hidden;
+}
+#portfolio_part .clint-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  margin-top: -158px;
+  margin-left: -50px;
+}
+
+#portfolio_part .container .text_box {
+  width: 467px;
+  height: 57px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+
+  overflow: hidden;
+}
+#portfolio_part .container .text_box p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#portfolio_part .container .text_box p span {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#portfolio_part .container .text_box .flip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 60px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: flip 10s ease-in-out infinite;
+}
+@keyframes flip {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 0;
+  }
+  50% {
+    top: -245%;
+  }
+  75% {
+    top: -245%;
+  }
+  100% {
+    top: 0;
+  }
+}
+#portfolio_part .container {
+  position: relative;
+}
+#portfolio_part .container .designer_box {
+  background: #141414;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+}
+#portfolio_part .container .designer_box h2 {
+  color: #e8e7e6;
+  font-family: "Tusker Grotesk";
+  font-size: 136px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#portfolio_part .container .designer_box p {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+#portfolio_part .container .portfolio_main {
+  background: #141414;
+  position: absolute;
+  top: 1000%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  transition: all linear 0.5s;
+  z-index: 1005;
+}
+#portfolio_part .owner_img {
+  width: 100%;
+}
+#portfolio_part .text_part_p {
+  margin-top: -145px;
+  margin-left: 35px;
+}
+#portfolio_part .text_part_p .cross_icon_part {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#portfolio_part .text_part_p .cross_icon_part #cross_portfiloi {
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+#portfolio_part .text_part_p .cross_icon_part #cross_portfiloi:hover {
+  transform: rotate(90deg);
+}
+#portfolio_part .text_part_p .text h3 {
+  color: #868686;
+  font-family: Montserrat;
+  font-size: 47.778px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#portfolio_part .container .text_part_p .text h3 span {
+  color: #fff;
+  font-family: "Tusker Grotesk";
+  font-size: 114.667px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#portfolio_part .text_part_p .text p {
+  color: #868686;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#portfolio_part .text_part_p .icon_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#portfolio_part .text_part_p .icon_part .active_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+  padding: 7px 24px;
+  border-radius: 48.396px;
+  border: 0.605px solid rgba(255, 255, 255, 0.05);
+  background: #141414;
+}
+#portfolio_part .icon_part .active_btn p {
+  color: #999;
+  font-family: Manrope;
+  font-size: 16.939px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0 !important;
+}
+#portfolio_part .text_part_p .Resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 14px;
+}
+#portfolio_part .text_part_p .Resume p {
+  color: #ccc;
+  font-family: Manrope;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: normal;
+}
+
+
+
+
+/* Part two */
+#two {
+  background: #000000;
+  padding:169px 350px;
+  z-index: 999;
+  overflow-y: hidden;
+}
+#two .clint-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  margin-top: -158px;
+  margin-left: -50px;
+}
+
+#two .container .text_box {
+  width: 467px;
+  height: 57px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+
+  overflow: hidden;
+}
+#two .container .text_box p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#two .container .text_box p span {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#two .container .text_box .flip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 60px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: flip 10s ease-in-out infinite;
+}
+@keyframes flip {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 0;
+  }
+  50% {
+    top: -245%;
+  }
+  75% {
+    top: -245%;
+  }
+  100% {
+    top: 0;
+  }
+}
+#two .container {
+  position: relative;
+}
+#two .container .designer_box {
+  background: #141414;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+}
+#two .container .designer_box h2 {
+  color: #e8e7e6;
+  font-family: "Tusker Grotesk";
+  font-size: 136px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#two .container .designer_box p {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+#two .container .portfolio_main {
+  background: #141414;
+  position: absolute;
+  top: 1000%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  transition: all linear 0.5s;
+  z-index: 1005;
+}
+#two .owner_img {
+  width: 100%;
+}
+#two .text_part_p {
+  margin-top: -145px;
+  margin-left: 35px;
+}
+#two .text_part_p .cross_icon_part {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#two .text_part_p .cross_icon_part #cross_portfiloi {
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+#two .text_part_p .cross_icon_part #cross_portfiloi:hover {
+  transform: rotate(90deg);
+}
+#two .text_part_p .text h3 {
+  color: #868686;
+  font-family: Montserrat;
+  font-size: 47.778px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#two .container .text_part_p .text h3 span {
+  color: #fff;
+  font-family: "Tusker Grotesk";
+  font-size: 114.667px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#two .text_part_p .text p {
+  color: #868686;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#two .text_part_p .icon_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#two .text_part_p .icon_part .active_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+  padding: 7px 24px;
+  border-radius: 48.396px;
+  border: 0.605px solid rgba(255, 255, 255, 0.05);
+  background: #141414;
+}
+#two .icon_part .active_btn p {
+  color: #999;
+  font-family: Manrope;
+  font-size: 16.939px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0 !important;
+}
+#two .text_part_p .Resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 14px;
+}
+#two .text_part_p .Resume p {
+  color: #ccc;
+  font-family: Manrope;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: normal;
+}
+
+
+
+#four {
+  background: #141414;
+  padding: 333px;
+  margin: 0 auto;
+}
+
+ .designer_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+  .designer_box h2 {
+  color: #e8e7e6;
+  font-family: "Tusker Grotesk";
+  font-size: 136px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+  .designer_box p {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+footer {
+  padding: 37px 0 0 0;
+  background: #000;
+  z-index: 1000;
+}
+footer .container h3 {
+  color: #e8e7e6;
+  font-family: "Tusker Grotesk";
+  font-size: 133.63px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+footer .container p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 34.419px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+  text-transform: uppercase;
+}
+footer .container p span {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 34.419px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+footer .container .col-lg-2{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+footer .container .col-lg-2 button{
+  width: 68px;
+  background: #2A2B2C;
+  height: 69px;
+  border-radius: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all linear 0.4s;
+}
+footer .container .col-lg-2 button:hover{
+  width: 68px;
+  background: #FF3D00;
+  height: 150px;
+  border-radius: 48px;
+}
+footer .container .col-lg-2 button .svg2{
+  display: none;
+  visibility: hidden;
+  transform: rotate(90deg) scale(1.5);
+  transition: all linear 0.4s;
+}
+footer .container .col-lg-2 button:hover .svg2{
+  display: block;
+  visibility: visible;
+}
+footer .container .col-lg-2 button:hover .svg1{
+  display: none;
+  visibility: hidden;
+}
+footer .container .col-lg-2 button:hover .svg1{
+  display: none;
+  visibility: visible;
+}
+
+.Section_hov .footer-items ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 93px;
+  margin-left: 180px;
+}
+
+.Section_hov .footer-items ul a {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.Section_hov .footer-bootom {
+  background: #0c0c0c;
+}
+.Section_hov .desigenr-contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.Section_hov .desigenr-contact h4 {
+  color: rgba(232, 231, 230, 0.5);
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Section_hov .desigenr-contact h4 a {
+  color: rgba(232, 231, 230, 0.5);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* ----------------Footer-PART-END--------------------- */
+
+/* ----------------Portfolio-PART-START--------------------- */
+
+#portfolio-part {
+	width: 100%;
+	height: 275px;
+	background: #141516;
+	padding: 24px 0 59px 0;
+}
+
+#portfolio-part .title-right h2 {
+  color: #e8e7e6;
+  font-family: "Tusker Grotesk";
+  font-size: 119px;
+  font-weight: 400;
+}
+
+#portfolio-part .portfolio-items {
+  margin-left: 543px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 30px;
+}
+
+#portfolio-part .portfolio-items ul {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+#portfolio-part .portfolio-items ul a {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+
+
+#portfolio-part .portfolio-items ul a:hover {
+    color: rgb(255, 75, 20);
+}
+
+/* ----------------Portfolio-PART-END--------------------- */
+
+
+/* ----------------project-items-PART-END--------------------- */
+
+
+/* ----------------project-items-PART-END--------------------- */
